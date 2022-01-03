@@ -62,7 +62,7 @@ include_once "header.php"
 
 <div class="container pt-5">
 
-    <h1 class="text-center py-5 id="cenik">Galerie</h1>
+    <h1 class="text-center py-5 id="gallery">Galerie</h1>
 
     <hr class="mt-2 mb-5">
 
