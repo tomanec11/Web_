@@ -18,7 +18,7 @@ mail($to, $emailSubject, $message, $header);
 //MySQL-Connection
 
 $connection = mysqli_connect("localhost", "root", "", "user_contact");
-$sql = "INSERT INTO user_info(name, email, tel) VALUES ('{$userName}','{$userEmail}','{$userTel}')";
+$sql = "INSERT INTO user_info(name, email, tel) VALUES ('$userName','$userEmail','$userTel')";
 
 $result = mysqli_query($connection, $sql);
 
