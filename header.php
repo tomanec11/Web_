@@ -11,13 +11,13 @@
                         <a class="nav-link px-3 text-dark" href="index.php">Domů</a>
                     </li>
                     <li class="nav-item px-3">
-                        <a class="nav-link  text-dark" href="#">Galerie</a>
+                        <a class="nav-link  text-dark" href="#galerie">Galerie</a>
                     </li>
                     <li class="nav-item px-3">
-                        <a class="nav-link  text-dark" href="#">Ceník</a>
+                        <a class="nav-link  text-dark" href="#cenik">Ceník</a>
                     </li>
                     <li class="nav-item px-3">
-                        <a class="nav-link  text-dark" href="#">Kontakt</a>
+                        <a class="nav-link  text-dark" href="kontakt.php">Kontakt</a>
                     </li>
                     <li class="nav-item px-3">
                         <a  class="nav-link btn btn-dark text-light fs-5" href="pokoje.php">Rezervace</a>
@@ -37,7 +37,7 @@
         <div class="carousel-inner">
             <div class="carousel-item">
 
-                <img class="bd-placeholder-img" style="margin-top: -50px" width="100%" height="100%"  src="image/main_photo.jpg" alt="z"><rect width="100%" height="100%"></rect>
+                <img class="bd-placeholder-img" style="margin-top: -50px" width="100%" height="100%"  src="image/main_photo.jpg" alt="z">
                 <div class="container">
 
                     <div class="carousel-caption text-end mb-lg-5">
@@ -47,7 +47,7 @@
                 </div>
             </div>
             <div class="carousel-item">
-                <img class="bd-placeholder-img" style="margin-top: -50px" width="100%" height="100%"  src="image/main_photo.jpg" alt="z"><rect width="100%" height="100%"></rect>
+                <img class="bd-placeholder-img" style="margin-top: -50px" width="100%" height="100%"  src="image/main_photo.jpg" alt="z">
 
                 <div class="container">
                     <div class="carousel-caption text-end mb-lg-5">
@@ -61,9 +61,8 @@
 
                 <div class="container">
                     <div class="carousel-caption text-end mb-lg-5">
-                        <h1>One more for good measure.</h1>
-                        <p>Some representative placeholder content for the third slide of this carousel.</p>
-                        <p><a class="btn btn-lg btn-warning" href="contact.php">Contact</a></p>
+                        <h1>Levné ubytování</h1>
+                        <p>Some representative placeholder content for the second slide of the carousel.</p>
                     </div>
                 </div>
             </div>

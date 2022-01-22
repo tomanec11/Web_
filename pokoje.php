@@ -20,7 +20,7 @@ include_once "header.php"
     </div>
 </div>
 
-<div class="bg-primary bg-opacity-75">
+<div class="bg-warning bg-opacity-75">
 <div class="container">
     <div class="album py-5">
         <div class="container">
@@ -31,7 +31,7 @@ include_once "header.php"
                         <div class="card-body">
                             <p class="card-text">This is a wider card with supporting text below as a natural lead-in to additional content. This content is a little bit longer.</p>
                             <div class="d-flex justify-content-between align-items-center">
-                                <a class="btn btn-primary" href="pokoj_1.php" role="button">Rezervovat</a>
+                                <a class="btn bg-warning" href="pokoj_1.php" role="button">Rezervovat</a>
                                 <p>320,- / 1 Noc</p>
                             </div>
                         </div>
@@ -43,7 +43,7 @@ include_once "header.php"
                         <div class="card-body">
                             <p class="card-text">This is a wider card with supporting text below as a natural lead-in to additional content. This content is a little bit longer.</p>
                             <div class="d-flex justify-content-between align-items-center">
-                                <a class="btn btn-primary" href="pokoj_2.php" role="button">Rezervovat</a>
+                                <a class="btn bg-warning" href="pokoj_2.php" role="button">Rezervovat</a>
                                 <p>320,- / 1 Noc</p>
                             </div>
                         </div>
@@ -55,44 +55,7 @@ include_once "header.php"
                         <div class="card-body">
                             <p class="card-text">This is a wider card with supporting text below as a natural lead-in to additional content. This content is a little bit longer.</p>
                             <div class="d-flex justify-content-between align-items-center">
-                                <a class="btn btn-primary" href="pokoj_3.php" role="button">Rezervovat</a>
-                                <p>320,- / 1 Noc</p>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-
-                <div class="col">
-                    <div class="card shadow-sm">
-                        <img src="image/IMG_4754.JPG" alt="1">
-                        <div class="card-body">
-                            <p class="card-text">This is a wider card with supporting text below as a natural lead-in to additional content. This content is a little bit longer.</p>
-                            <div class="d-flex justify-content-between align-items-center">
-                                <a class="btn btn-primary" href="pokoj_1.php" role="button">Rezervovat</a>
-                                <p>320,- / 1 Noc</p>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-                <div class="col">
-                    <div class="card shadow-sm">
-                        <img src="image/IMG_4754.JPG" alt="1">
-                        <div class="card-body">
-                            <p class="card-text">This is a wider card with supporting text below as a natural lead-in to additional content. This content is a little bit longer.</p>
-                            <div class="d-flex justify-content-between align-items-center">
-                                <a class="btn btn-primary" href="pokoj_1.php" role="button">Rezervovat</a>
-                                <p>320,- / 1 Noc</p>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-                <div class="col">
-                    <div class="card shadow-sm">
-                        <img src="image/IMG_4754.JPG" alt="1">
-                        <div class="card-body">
-                            <p class="card-text">This is a wider card with supporting text below as a natural lead-in to additional content. This content is a little bit longer.</p>
-                            <div class="d-flex justify-content-between align-items-center">
-                                <a class="btn btn-primary" href="pokoj_1.php" role="button">Rezervovat</a>
+                                <a class="btn btn-warning" href="pokoj_3.php" role="button">Rezervovat</a>
                                 <p>320,- / 1 Noc</p>
                             </div>
                         </div>
@@ -105,7 +68,7 @@ include_once "header.php"
                         <div class="card-body">
                             <p class="card-text">This is a wider card with supporting text below as a natural lead-in to additional content. This content is a little bit longer.</p>
                             <div class="d-flex justify-content-between align-items-center">
-                                <a class="btn btn-primary" href="pokoj_1.php" role="button">Rezervovat</a>
+                                <a class="btn btn-warning" href="pokoj_1.php" role="button">Rezervovat</a>
                                 <p>320,- / 1 Noc</p>
                             </div>
                         </div>
@@ -117,7 +80,7 @@ include_once "header.php"
                         <div class="card-body">
                             <p class="card-text">This is a wider card with supporting text below as a natural lead-in to additional content. This content is a little bit longer.</p>
                             <div class="d-flex justify-content-between align-items-center">
-                                <a class="btn btn-primary" href="pokoj_1.php" role="button">Rezervovat</a>
+                                <a class="btn btn-warning" href="pokoj_1.php" role="button">Rezervovat</a>
                                 <p>320,- / 1 Noc</p>
                             </div>
                         </div>
@@ -129,7 +92,44 @@ include_once "header.php"
                         <div class="card-body">
                             <p class="card-text">This is a wider card with supporting text below as a natural lead-in to additional content. This content is a little bit longer.</p>
                             <div class="d-flex justify-content-between align-items-center">
-                                <a class="btn btn-primary" href="pokoj_1.php" role="button">Rezervovat</a>
+                                <a class="btn btn-warning" href="pokoj_1.php" role="button">Rezervovat</a>
+                                <p>320,- / 1 Noc</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="col">
+                    <div class="card shadow-sm">
+                        <img src="image/IMG_4754.JPG" alt="1">
+                        <div class="card-body">
+                            <p class="card-text">This is a wider card with supporting text below as a natural lead-in to additional content. This content is a little bit longer.</p>
+                            <div class="d-flex justify-content-between align-items-center">
+                                <a class="btn btn-warning" href="pokoj_1.php" role="button">Rezervovat</a>
+                                <p>320,- / 1 Noc</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="col">
+                    <div class="card shadow-sm">
+                        <img src="image/IMG_4754.JPG" alt="1">
+                        <div class="card-body">
+                            <p class="card-text">This is a wider card with supporting text below as a natural lead-in to additional content. This content is a little bit longer.</p>
+                            <div class="d-flex justify-content-between align-items-center">
+                                <a class="btn btn-warning" href="pokoj_1.php" role="button">Rezervovat</a>
+                                <p>320,- / 1 Noc</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="col">
+                    <div class="card">
+                        <img src="image/IMG_4754.JPG" alt="1">
+                        <div class="card-body">
+                            <p class="card-text">This is a wider card with supporting text below as a natural lead-in to additional content. This content is a little bit longer.</p>
+                            <div class="d-flex justify-content-between align-items-center">
+                                <a class="btn btn-warning" href="pokoj_1.php" role="button">Rezervovat</a>
                                 <p>320,- / 1 Noc</p>
                             </div>
                         </div>
