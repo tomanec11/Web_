@@ -5,7 +5,6 @@
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.7.2/font/bootstrap-icons.css">
     <link rel="stylesheet" href="css/bootstrap.min.css">
-    <link rel="stylesheet" href="LightGallery/lightgallery.css">
     <script rel="stylesheet" src="js/bootstrap.min.js"></script>
     <script rel="stylesheet" src="js/index.bundle.min.js"></script>
 
@@ -31,7 +30,7 @@ include_once "header.php"
                 <h2 class="featurette-heading">Ubytování</h2>
                 <p class="lead fs-4">Poskytujeme v sedmi dvoulůžkových pokojích a jednom jednolůžkovém. K dispozici je i přistýlka</p>
             </div>
-            <div class="col-md-5">
+            <div class="col-md-5 px-5">
                 <img src="image/bed-icon-png-29.jpg" alt="wifi" width="250" height="200">
             </div>
         </div>
@@ -55,7 +54,7 @@ include_once "header.php"
                 <h2 class="featurette-heading">Free WI-FI</h2>
                 <p class="lead fs-4">Máme také WI-FI zdarma. Heslo je na každém pokoji.</p>
             </div>
-            <div class="col-md-5">
+            <div class="col-md-5 px-5">
                 <img src="image/WIFI.png" alt="wifi" width="300" height="200">
             </div>
         </div>
