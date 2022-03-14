@@ -26,11 +26,11 @@ include_once "header.php"
     <div class="container">
 
         <div class="row py-5">
-            <div class="col-md-7">
+            <div class="col-md-9">
                 <h2 class="featurette-heading">Ubytování</h2>
                 <p class="lead fs-4">Poskytujeme v sedmi dvoulůžkových pokojích a jednom jednolůžkovém. K dispozici je i přistýlka</p>
             </div>
-            <div class="col-md-5 px-5">
+            <div class="col-md-3 px-5">
                 <img src="image/bed-icon-png-29.jpg" alt="wifi" width="250" height="200">
             </div>
         </div>
@@ -50,11 +50,11 @@ include_once "header.php"
         <hr class="featurette-divider">
 
         <div class="row py-5">
-            <div class="col-md-7">
+            <div class="col-md-9">
                 <h2 class="featurette-heading">Free WI-FI</h2>
                 <p class="lead fs-4">Máme také WI-FI zdarma. Heslo je na každém pokoji.</p>
             </div>
-            <div class="col-md-5 px-5">
+            <div class="col-md-3 px-5">
                 <img src="image/WIFI.png" alt="wifi" width="300" height="200">
             </div>
         </div>
