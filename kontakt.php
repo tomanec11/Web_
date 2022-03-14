@@ -14,10 +14,11 @@
 </head>
 <body>
 <?php
-include_once "header.php"
+include_once "header.php";
+include_once "email_sql.php";
 ?>
 <div class="container my-5">
-    <form action="email_sql.php" method="POST" class="form">
+    <form action="kontakt.php" method="POST" class="form">
         <div class="form-group">
             <label for="name" class="form-label">Jméno a příjmení</label>
             <input type="text" class="form-control" name="name" placeholder="Jméno příjmení" tabindex="1" required>

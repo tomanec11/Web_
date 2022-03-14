@@ -8,6 +8,8 @@
     <script rel="stylesheet" src="js/bootstrap.min.js"></script>
     <script rel="stylesheet" src="js/index.bundle.min.js"></script>
 
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/lightgallery@2.4.0/css/lightgallery-bundle.min.css">
+
     <title>Ubytovani</title>
 </head>
 <body>
@@ -18,7 +20,8 @@ include_once "header.php"
 <div class="px-4 py-5 my-5 text-center">
     <h1 class="display-5 fw-bold">Ubytování</h1>
     <div class="col-lg-6 mx-auto">
-        <p class="lead mb-4 fs-4">Nabízíme ubytování ve vile Taťána, která se nachází na pěší zóně v samém centru lázní Luhačovice. Poblíž je supermarket a mnoho dalších obchodů. K dispozici je také parkování.</p>
+        <p class="lead mb-4 fs-4">Nabízíme ubytování ve vile Taťána, která se nachází na pěší zóně v samém centru lázní
+            Luhačovice. Poblíž je supermarket a mnoho dalších obchodů. K dispozici je také parkování.</p>
     </div>
 </div>
 
@@ -28,7 +31,8 @@ include_once "header.php"
         <div class="row py-5">
             <div class="col-md-9">
                 <h2 class="featurette-heading">Ubytování</h2>
-                <p class="lead fs-4">Poskytujeme v sedmi dvoulůžkových pokojích a jednom jednolůžkovém. K dispozici je i přistýlka</p>
+                <p class="lead fs-4">Poskytujeme v sedmi dvoulůžkových pokojích a jednom jednolůžkovém. K dispozici je i
+                    přistýlka</p>
             </div>
             <div class="col-md-3 px-5">
                 <img src="image/bed-icon-png-29.jpg" alt="wifi" width="250" height="200">
@@ -43,7 +47,8 @@ include_once "header.php"
             </div>
             <div class="col-md-7">
                 <h2 class="featurette-heading">Vybavení pokojů</h2>
-                <p class="lead fs-4">Všechny pokoje jsou vybaveny varnou konvicí, televizí a k dispozici je taktéž lednice. Pokoje bez vlastního sociálního zařízení jsou vybaveny umyvadlem.</p>
+                <p class="lead fs-4">Všechny pokoje jsou vybaveny varnou konvicí, televizí a k dispozici je taktéž
+                    lednice. Pokoje bez vlastního sociálního zařízení jsou vybaveny umyvadlem.</p>
             </div>
         </div>
 
@@ -65,47 +70,40 @@ include_once "header.php"
     <h1 class="text-center py-5" id="galerie">Galerie</h1>
     <hr class="mt-2 mb-5">
 
-    <div class="row" id="lightgallery">
-        <div class="col-lg-3 col-md-4 col-6">
-            <a href="image/pokoj2.jpg" class="d-block mb-4 h-100">
-                <img class="img-fluid" src="image/pokoj2.jpg">
-            </a>
-        </div>
-        <div class="col-lg-3 col-md-4 col-6">
-            <a href="image/pokoj2.jpg" class="d-block mb-4 h-100">
-                <img class="img-fluid" src="image/pokoj2.jpg">
-            </a>
-        </div>
-        <div class="col-lg-3 col-md-4 col-6">
-            <a href="image/pokoj2.jpg" class="d-block mb-4 h-100">
-                <img class="img-fluid" src="image/pokoj2.jpg">
-            </a>
-        </div>
-        <div class="col-lg-3 col-md-4 col-6">
-            <a href="image/pokoj2.jpg" class="d-block mb-4 h-100">
-                <img class="img-fluid" src="image/pokoj2.jpg">
-            </a>
-        </div>
-        <div class="col-lg-3 col-md-4 col-6">
-            <a href="image/pokoj2.jpg" class="d-block mb-4 h-100">
-                <img class="img-fluid" src="image/pokoj2.jpg">
-            </a>
-        </div>
-        <div class="col-lg-3 col-md-4 col-6">
-            <a href="image/pokoj2.jpg" class="d-block mb-4 h-100">
-                <img class="img-fluid" src="image/pokoj2.jpg">
-            </a>
-        </div>
-        <div class="col-lg-3 col-md-4 col-6">
-            <a href="image/pokoj2.jpg" class="d-block mb-4 h-100">
-                <img class="img-fluid" src="image/pokoj2.jpg">
-            </a>
-        </div>
-        <div class="col-lg-3 col-md-4 col-6">
-            <a href="image/pokoj2.jpg" class="d-block mb-4 h-100">
-                <img class="img-fluid" src="image/pokoj2.jpg">
-            </a>
-        </div>
+    <div class="d-flex flex-wrap justify-content-center" id="lightgallery">
+        <a href="image/pokoj2.jpg" class="d-block my-5 mx-4" style="height: 100px">
+            <img class="img-fluid" src="image/pokoj2.jpg" style="height: 150px">
+        </a>
+
+        <a href="image/pokoj2.jpg" class="d-block my-5 mx-4"  style="height: 100px">
+            <img class="img-fluid" src="image/pokoj2.jpg" style="height: 150px">
+        </a>
+        <a href="image/pokoj2.jpg" class="d-block my-5 mx-4" style="height: 100px">
+            <img class="img-fluid" src="image/pokoj2.jpg" style="height: 150px">
+        </a>
+        <a href="image/pokoj2.jpg" class="d-block my-5 mx-4" style="height: 100px">
+            <img class="img-fluid" src="image/pokoj2.jpg" style="height: 150px">
+        </a>
+        <a href="image/pokoj2.jpg" class="d-block my-5 mx-4" style="height: 100px">
+            <img class="img-fluid" src="image/pokoj2.jpg" style="height: 150px">
+        </a>
+        <a href="image/pokoj2.jpg" class="d-block my-5 mx-4" style="height: 100px">
+            <img class="img-fluid" src="image/pokoj2.jpg" style="height: 150px">
+        </a>
+        <a href="image/pokoj2.jpg" class="d-block my-5 mx-4" style="height: 100px">
+            <img class="img-fluid" src="image/pokoj2.jpg" style="height: 150px">
+        </a>
+        <a href="image/pokoj2.jpg" class="d-block my-5 mx-4" style="height: 100px">
+            <img class="img-fluid" src="image/pokoj2.jpg" style="height: 150px">
+        </a>
+
+        <a href="image/pokoj2.jpg" class="d-block my-5 mx-4" style="height: 100px">
+            <img class="img-fluid" src="image/pokoj2.jpg" style="height: 150px">
+        </a>
+
+        <a href="image/pokoj2.jpg" class="d-block my-5 mx-4" style="height: 100px">
+            <img class="img-fluid" src="image/pokoj2.jpg" style="height: 150px">
+        </a>
     </div>
 
 </div>
@@ -121,7 +119,8 @@ include_once "header.php"
                     <h4 class="my-0 fw-normal">Pokoj - společné příslušenství</h4>
                 </div>
                 <div class="card-body">
-                    <h1 class="card-title pricing-card-title">315,-<small class="text-muted fw-light">/osoba-noc</small></h1>
+                    <h1 class="card-title pricing-card-title">315,-<small class="text-muted fw-light">/osoba-noc</small>
+                    </h1>
                     <ul class="list-unstyled mt-3 mb-4">
                         <li>TV</li>
                         <li>Umyvadlo</li>
@@ -136,7 +135,8 @@ include_once "header.php"
                     <h4 class="my-0 fw-normal">Pokoj - vlastní příslušenství</h4>
                 </div>
                 <div class="card-body">
-                    <h1 class="card-title pricing-card-title">365,-<small class="text-muted fw-light">/osoba-noc</small></h1>
+                    <h1 class="card-title pricing-card-title">365,-<small class="text-muted fw-light">/osoba-noc</small>
+                    </h1>
                     <ul class="list-unstyled mt-3 mb-4">
                         <li>TV</li>
                         <li>Koupelna, WC, sprcha</li>
@@ -148,14 +148,14 @@ include_once "header.php"
     </div>
 </div>
 
-<script src="LightGallery/lightgallery.min.js"></script>
-<script src="LightGallery/lg-fullscreen.min.js"></script>
-<script src="LightGallery/lg-thumbnail.min.js"></script>
-<script src="LightGallery/lg-video.min.js"></script>
+<script src="https://cdn.jsdelivr.net/npm/lightgallery@2.4.0/lightgallery.min.js"></script>
+
 <script>
-    $(document).ready(function () {
-        $("#lightgallery").lightGallery();
-    }
+    // $(document).ready(function () {
+    lightGallery(document.getElementById('lightgallery'));
+
+    // $("#lightgallery").lightGallery();
+    // }
 </script>
 
 

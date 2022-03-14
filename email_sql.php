@@ -1,24 +1,41 @@
 <?php
-$userName = $_POST['name'];
-$userEmail = $_POST['email'];
-$userTel = $_POST['tel'];
+if (isset($_POST['name'], $_POST['email'], $_POST['tel'])) {
+    $userName = $_POST['name'];
+    $userEmail = $_POST['email'];
+    $userTel = $_POST['tel'];
+    // TODO: toto je funkční kód, ale je zakomentován aby se ukládala data pouze do DB
+    /*
+    //subject
+    $emailSubject = 'HTML email';
+    //to
+    $to = 'tom.martinec@email.cz';
+    //message
+    $message = '<h1>Rezervováno</h1> . <p>Děkujeme za vaši rezervaci</p>';
 
-//subject
-$emailSubject = 'HTML email';
-//to
-$to = 'tom.martinec@email.cz';
-//message
-$message = '<h1>Rezervováno</h1> . <p>Děkujeme za vaši rezervaci</p>';
-//header
-$header = "From: " .$userName. "<".$userEmail.">";
-$header = "Reply-to: " .$to;
+    // Set content-type header for sending HTML email
+    $headers = "MIME-Version: 1.0" . "\r\n";
+    $headers .= "Content-type:text/html;charset=UTF-8" . "\r\n";
 
-mail($to, $emailSubject, $message, $header);
+    // Additional headers
+    $headers .= 'From: Localhost sender<master@localhost>' . "\r\n";
+    $headers .= "Reply-to: " . $userEmail; // odpovím na mail
 
-//MySQL-Connection
+    // Send email
+    if(mail($to, $emailSubject, $message, $headers)){
+        echo 'Děkujeme za kontaktování.';
+    }else{
+        echo 'Email sending failed.';
+    }*/
 
-$connection = mysqli_connect("localhost", "root", "", "user_contact");
-$sql = "INSERT INTO user_info(name, email, tel) VALUES ('$userName','$userEmail','$userTel')";
+    //MySQL-Connection
 
-$result = mysqli_query($connection, $sql);
+    $connection = mysqli_connect("localhost", "root", "", "user_contact");
+    $sql = "INSERT INTO user_info (name, email, tel) VALUES ('$userName','$userEmail','$userTel')";
+
+    $result = mysqli_query($connection, $sql);
+    ?>
+    <h2 class="text-center h4">Děkujeme za kontaktování</h2>
+    <?php
+}
+
 
