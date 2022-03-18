@@ -15,9 +15,13 @@
 <body>
 <?php
 include_once "header.php";
-include_once "email_sql.php";
+//include_once "email_sql.php";
 ?>
 <div class="container my-5">
+    <div class="px-4 py-5 my-5 text-center">
+        <h1 class="display-5 fw-bold">Kontakt</h1>
+    </div>
+
     <form action="kontakt.php" method="POST" class="form">
         <div class="form-group">
             <label for="name" class="form-label">Jméno a příjmení</label>
@@ -39,7 +43,8 @@ include_once "email_sql.php";
     </form>
 
 <?php
-include_once "footer.php"
+include_once "email_sql.php";
+include_once "footer.php";
 ?>
 </body>
 </html>

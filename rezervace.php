@@ -12,29 +12,111 @@
 <?php
 include_once "header.php";
 // otevřu DB connect
-$connection = mysqli_connect("localhost", "root", "", "user_contact");
-$sql = "SELECT * FROM rooms_extra_info";
-
-$result = mysqli_query($connection, $sql);
+$conn = new mysqli("localhost", "root", "", "user_contact");
 ?>
 <?php
-if(isset($_GET['id'])){
-    $stmt = $result->prepare('SELECT * FROM rooms_extra_info WHERE id = ?');
-    $stmt-execute([$_GET['id']]);
+if (isset($_GET['id'])) {
+    $rooms = $conn->prepare('
+       SELECT * FROM rooms
+        WHERE id = ?');
 
-    $rooms_extra_info = $stmt->fetch(PDO::FETCH_ASSOC);
-    if(!$rooms_extra_info){
-        exit('Pokoj neexistuje');
+    /*$rooms = $conn->prepare('
+        SELECT * FROM rooms
+        LEFT JOIN rooms_extra_info
+        ON rooms.id = rooms_extra_info.forkey_id
+        WHERE id = ?
+        ');*/
+    $rooms->bind_param("i", $_GET['id']);
+    $rooms->execute();
+
+    $result = $rooms->get_result();
+    if ($result->num_rows === 0){
+        exit('<div class="px-4 py-5 my-5 text-center">
+                <h1 class="display-5 fw-bold">Pokoj neexistuje</h1>
+              </div>');
     }
-}else{
-    exit('Pokoj neexistuje');
+
+    $room = $result->fetch_assoc();
+    $rooms->close();
+
+
+} else {
+    exit('<div class="px-4 py-5 my-5 text-center">
+                <h1 class="display-5 fw-bold">Pokoj neexistuje</h1>
+          </div>');
 }
 
 $result = NULL;
 ?>
 
-<div class="px-4 py-5 my-5 text-center">
-    <h1 class="display-5 fw-bold"><?php echo $result['name']?></h1>
+    <div class="px-4 py-5 my-5 text-center">
+        <h1 class="display-5 fw-bold"><?php echo $room['name'] ?></h1>
+    </div>
+<div class="container justify-content-end row">
+
+    <table class="table-responsive py-4 col-lg-8">
+        <thead class="thead-dark">
+        </thead>
+        <tbody>
+        <tr>
+            <th scope="row" class="text-end px-3">WC</th>
+            <td><?php echo $room['name'] ?></td>
+        </tr>
+        <tr>
+            <th scope="row" class="text-end px-3">Sprchový kout</th>
+            <td><?php echo $room['name'] ?></td>
+        </tr>
+        <tr>
+            <th scope="row" class="text-end px-3">Umyvadlo</th>
+            <td><?php echo $room['name'] ?></td>
+        </tr>
+        <tr>
+            <th scope="row" class="text-end px-3">TV</th>
+            <td><?php echo $room['name'] ?></td>
+        </tr>
+        <tr>
+            <th scope="row" class="text-end px-3">Postele</th>
+            <td><?php echo $room['name'] ?></td>
+        </tr>
+        <tr>
+            <th scope="row" class="text-end px-3">Skříň</th>
+            <td><?php echo $room['name'] ?></td>
+        </tr>
+        </tbody>
+    </table>
+
+    <div class="py-5 col-lg-4 text-center">
+        <img src="<?php echo $room['photo']?>" alt="1" width="100%" height="100%">
+
+    </div>
+
+    <a class="btn bg-warning" href="#" role="button">Rezervovat</a>
+
+    <!--- <div class="py-5 my-5 col-lg-4 text-end">
+            <p class="card-text fw-bold fs-5">WC</p>
+            <p class="card-text fw-bold fs-5">Sprchový kout</p>
+            <p class="card-text fw-bold fs-5">Umyvadlo</p>
+            <p class="card-text fw-bold fs-5">TV</p>
+            <p class="card-text fw-bold fs-5">Postele</p>
+            <p class="card-text fw-bold fs-5">Skříň</p>
+        </div>
+        <div class="py-5 my-5 col-lg-4">
+            <p class="card-text fw-bold fs-5"><?php echo $room['name']?></p>
+            <p class="card-text fw-bold fs-5"><?php echo $room['name']?></p>
+            <p class="card-text fw-bold fs-5"><?php echo $room['name']?></p>
+            <p class="card-text fw-bold fs-5"><?php echo $room['name']?></p>
+            <p class="card-text fw-bold fs-5"><?php echo $room['name']?></p>
+            <p class="card-text fw-bold fs-5"><?php echo $room['name']?></p>
+        </div>
+    <div class="py-5 my-5 col-lg-4 col-md-2 text-start">
+        <p class="card-text fs-5 text-start"><span class="fw-bold fs-5">WC</span><?php echo $room['name']?></p>
+        <p class="card-text fs-5"><span class="fw-bold">Sprchový kout</span><?php echo $room['name']?></p>
+        <p class="card-text fs-5"><span class="fw-bold">Umyvadlo</span> <?php echo $room['name']?></p>
+        <p class="card-text fs-5"><span class="fw-bold">TV</span> <?php echo $room['name']?></p>
+        <p class="card-text fs-5"><span class="fw-bold">Postele</span> <?php echo $room['name']?></p>
+        <p class="card-text fs-5"><span class="fw-bold">Skříň</span> <?php echo $room['name']?></p>
+    </div>-->
+
 </div>
 
 

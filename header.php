@@ -1,20 +1,20 @@
 <header>
     <nav class="navbar navbar-expand-md navbar-dark fixed-top bg-light bg-opacity-75 p-3">
         <div class="container-fluid ">
-            <a class="navbar-brand text-dark" href="#">Ubytování</a>
+            <a class="navbar-brand text-dark fw-bold" href="index.php#home">Vila Taťána</a>
             <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarCollapse" aria-controls="navbarCollapse" aria-expanded="false" aria-label="Toggle navigation">
                 <span class="navbar-toggler-icon"></span>
             </button>
             <div class="collapse navbar-collapse fs-5 justify-content-end" id="navbarCollapse">
                 <ul class="navbar-nav me-5 mb-2 mb-md-0">
                     <li class="nav-item">
-                        <a class="nav-link px-3 text-dark" href="index.php">Domů</a>
+                        <a class="nav-link px-3 text-dark" href="index.php#home">Domů</a>
                     </li>
                     <li class="nav-item px-3">
-                        <a class="nav-link  text-dark" href="#galerie">Galerie</a>
+                        <a class="nav-link  text-dark" href="index.php#galerie">Galerie</a>
                     </li>
                     <li class="nav-item px-3">
-                        <a class="nav-link  text-dark" href="#cenik">Ceník</a>
+                        <a class="nav-link  text-dark" href="index.php#cenik">Ceník</a>
                     </li>
                     <li class="nav-item px-3">
                         <a class="nav-link  text-dark" href="kontakt.php">Kontakt</a>

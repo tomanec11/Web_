@@ -34,7 +34,9 @@ if (isset($_POST['name'], $_POST['email'], $_POST['tel'])) {
 
     $result = mysqli_query($connection, $sql);
     ?>
-    <h2 class="text-center h4">Děkujeme za kontaktování</h2>
+    <div class="px-4 py-3 my-5 text-center">
+        <p class="display-5">Děkujeme za kontaktování</p>
+    </div>
     <?php
 }
 
