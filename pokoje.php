@@ -36,7 +36,7 @@ $result = mysqli_query($connection, $sql);
                                 <div class="card-body">
                                     <p class="card-text"><?php echo $row['content']?></p>
                                     <div class="d-flex justify-content-between align-items-center">
-                                        <a class="btn bg-warning" href="rezervace.php?id=<?php echo $row['id'] ?>" role="button">Rezervovat</a>
+                                        <a class="btn bg-warning" href="room_info.php?id=<?php echo $row['id'] ?>" role="button">Rezervovat</a>
                                         <p><?php echo $row['price']?> / 1 Noc</p>
                                     </div>
                                 </div>

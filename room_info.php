@@ -87,43 +87,37 @@ $result = NULL;
 
     <div class="py-5 col-lg-4 text-center">
         <img src="<?php echo $room['photo']?>" alt="1" width="100%" height="100%">
-
     </div>
 
-    <a class="btn bg-warning" href="#" role="button">Rezervovat</a>
 
-    <!--- <div class="py-5 my-5 col-lg-4 text-end">
-            <p class="card-text fw-bold fs-5">WC</p>
-            <p class="card-text fw-bold fs-5">Sprchový kout</p>
-            <p class="card-text fw-bold fs-5">Umyvadlo</p>
-            <p class="card-text fw-bold fs-5">TV</p>
-            <p class="card-text fw-bold fs-5">Postele</p>
-            <p class="card-text fw-bold fs-5">Skříň</p>
+    <form action="room_info.php.php" method="POST" class="form p-5">
+        <div class="form-group">
+            <label for="room" class="form-label">Pokoj</label>
+            <input type="text" class="form-control" name="Pokoj" value="<?php echo $room['name'] ?>" tabindex="1" required>
         </div>
-        <div class="py-5 my-5 col-lg-4">
-            <p class="card-text fw-bold fs-5"><?php echo $room['name']?></p>
-            <p class="card-text fw-bold fs-5"><?php echo $room['name']?></p>
-            <p class="card-text fw-bold fs-5"><?php echo $room['name']?></p>
-            <p class="card-text fw-bold fs-5"><?php echo $room['name']?></p>
-            <p class="card-text fw-bold fs-5"><?php echo $room['name']?></p>
-            <p class="card-text fw-bold fs-5"><?php echo $room['name']?></p>
+        <div class="form-group">
+            <label for="name" class="form-label">Jméno a příjmení</label>
+            <input type="text" class="form-control" name="name" placeholder="Jméno příjmení" tabindex="2" required>
         </div>
-    <div class="py-5 my-5 col-lg-4 col-md-2 text-start">
-        <p class="card-text fs-5 text-start"><span class="fw-bold fs-5">WC</span><?php echo $room['name']?></p>
-        <p class="card-text fs-5"><span class="fw-bold">Sprchový kout</span><?php echo $room['name']?></p>
-        <p class="card-text fs-5"><span class="fw-bold">Umyvadlo</span> <?php echo $room['name']?></p>
-        <p class="card-text fs-5"><span class="fw-bold">TV</span> <?php echo $room['name']?></p>
-        <p class="card-text fs-5"><span class="fw-bold">Postele</span> <?php echo $room['name']?></p>
-        <p class="card-text fs-5"><span class="fw-bold">Skříň</span> <?php echo $room['name']?></p>
-    </div>-->
+        <div class="form-group">
+            <label for="email" class="form-label">Email</label>
+            <input type="email" class="form-control" name="email" placeholder="email@email.cz" tabindex="3" required>
+        </div>
+        <div class="form-group">
+            <label for="tel" class="form-label">Telefonní číslo</label>
+            <input type="tel" class="form-control" name="tel" value="+420" tabindex="4" required>
+        </div>
 
+        <div>
+            <button type="submit" class="btn btn-warning my-3 px-5">Rezervovat</button>
+        </div>
+        </div>
+    </form>
 </div>
-
-
 
 <?php
+include_once "email_sql.php";
 include_once "footer.php"
 ?>
-</div>
 </body>
 </html>
