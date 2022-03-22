@@ -115,7 +115,7 @@ include_once "header.php"
     <div class="row row-cols-1 row-cols-md-2 mb-3 text-center">
         <div class="col">
             <div class="card mb-4 rounded-3 shadow-sm">
-                <div class="card-header bg-warning py-3">
+                <div class="card-header py-3">
                     <h4 class="my-0 fw-normal">Pokoj - společné příslušenství</h4>
                 </div>
                 <div class="card-body">
@@ -132,7 +132,7 @@ include_once "header.php"
         </div>
         <div class="col">
             <div class="card mb-4 rounded-3 shadow-sm">
-                <div class="card-header bg-warning py-3">
+                <div class="card-header py-3">
                     <h4 class="my-0 fw-normal ">Pokoj - vlastní příslušenství</h4>
                 </div>
                 <div class="card-body">

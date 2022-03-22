@@ -1,8 +1,9 @@
 <?php
-if (isset($_POST['name'], $_POST['email'], $_POST['tel'])) {
-    $userName = $_POST['name'];
-    $userEmail = $_POST['email'];
-    $userTel = $_POST['tel'];
+if (isset($_POST['Fname'], $_POST['Lname'], $_POST['email_mess'], $_POST['mess'])) {
+    $userFName = $_POST['Fname'];
+    $userLName = $_POST['Lname'];
+    $userEmailMess = $_POST['email_mess'];
+    $userMess = $_POST['mess'];
     // TODO: toto je funkční kód, ale je zakomentován aby se ukládala data pouze do DB
     /*
     //subject
@@ -10,7 +11,7 @@ if (isset($_POST['name'], $_POST['email'], $_POST['tel'])) {
     //to
     $to = 'tom.martinec@email.cz';
     //message
-    $message = '<h1>Rezervováno</h1> . <p>Děkujeme za vaši rezervaci</p>';
+    $message = $userMess;
 
     // Set content-type header for sending HTML email
     $headers = "MIME-Version: 1.0" . "\r\n";
@@ -18,7 +19,7 @@ if (isset($_POST['name'], $_POST['email'], $_POST['tel'])) {
 
     // Additional headers
     $headers .= 'From: Localhost sender<master@localhost>' . "\r\n";
-    $headers .= "Reply-to: " . $userEmail; // odpovím na mail
+    $headers .= "Reply-to: " . $userEmailMess; // odpovím na mail
 
     // Send email
     if(mail($to, $emailSubject, $message, $headers)){
@@ -30,14 +31,35 @@ if (isset($_POST['name'], $_POST['email'], $_POST['tel'])) {
     //MySQL-Connection
 
     $connection = mysqli_connect("localhost", "root", "", "user_contact");
-    $sql = "INSERT INTO user_info (name, email, tel) VALUES ('$userName','$userEmail','$userTel')";
+    $sqlMess = "INSERT INTO costumer_message (name, surname, email, mess) VALUES ('$userFName','$userLName','$userEmailMess','$userMess')";
 
-    $result = mysqli_query($connection, $sql);
+    $result = mysqli_query($connection, $sqlMess);
     ?>
     <div class="px-4 py-3 my-5 text-center">
         <p class="display-5">Děkujeme za kontaktování</p>
     </div>
     <?php
 }
+?>
 
+<?php
+if (isset($_POST['room'], $_POST['First_name'], $_POST['Last_name'], $_POST['email'], $_POST['tel'],)) {
+    $userRoom = $_POST['room'];
+    $userFirstName = $_POST['First_name'];
+    $userLastName = $_POST['Last_name'];
+    $userEmail = $_POST['email'];
+    $userTel = $_POST['tel'];
+
+    //MySQL-Connection
+
+    $connection = mysqli_connect("localhost", "root", "", "user_contact");
+    $sqlBook = "INSERT INTO costumer_book (room,Fname, Lname, email, tel) VALUES ('$userFirstName','$userLastName','$userEmail','$userTel')";
+
+    $result_Book = mysqli_query($connection, $sqlBook);
+    ?>
+    <div class="px-4 py-3 my-5 text-center">
+        <p class="display-5">Děkujeme za kontaktování</p>
+    </div>
+    <?php
+}
 

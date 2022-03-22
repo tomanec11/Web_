@@ -52,60 +52,66 @@ $result = NULL;
     <div class="px-4 py-5 my-5 text-center">
         <h1 class="display-5 fw-bold"><?php echo $room['name'] ?></h1>
     </div>
-<div class="container justify-content-end row">
+<div class="container">
+    <div class="row">
+        <div class="col-5 col-sm py-4">
+            <table class="table-responsive ">
+                <tbody>
+                <tr>
+                    <th scope="row" class="text-end px-3">WC</th>
+                    <td><?php echo $room['name'] ?></td>
+                </tr>
+                <tr>
+                    <th scope="row" class="text-end px-3">Sprchový kout</th>
+                    <td><?php echo $room['name'] ?></td>
+                </tr>
+                <tr>
+                    <th scope="row" class="text-end px-3">Umyvadlo</th>
+                    <td><?php echo $room['name'] ?></td>
+                </tr>
+                <tr>
+                    <th scope="row" class="text-end px-3">TV</th>
+                    <td><?php echo $room['name'] ?></td>
+                </tr>
+                <tr>
+                    <th scope="row" class="text-end px-3">Postele</th>
+                    <td><?php echo $room['name'] ?></td>
+                </tr>
+                <tr>
+                    <th scope="row" class="text-end px-3">Skříň</th>
+                    <td><?php echo $room['name'] ?></td>
+                </tr>
+                </tbody>
+            </table>
+        </div>
 
-    <table class="table-responsive py-4 col-lg-8">
-        <thead class="thead-dark">
-        </thead>
-        <tbody>
-        <tr>
-            <th scope="row" class="text-end px-3">WC</th>
-            <td><?php echo $room['name'] ?></td>
-        </tr>
-        <tr>
-            <th scope="row" class="text-end px-3">Sprchový kout</th>
-            <td><?php echo $room['name'] ?></td>
-        </tr>
-        <tr>
-            <th scope="row" class="text-end px-3">Umyvadlo</th>
-            <td><?php echo $room['name'] ?></td>
-        </tr>
-        <tr>
-            <th scope="row" class="text-end px-3">TV</th>
-            <td><?php echo $room['name'] ?></td>
-        </tr>
-        <tr>
-            <th scope="row" class="text-end px-3">Postele</th>
-            <td><?php echo $room['name'] ?></td>
-        </tr>
-        <tr>
-            <th scope="row" class="text-end px-3">Skříň</th>
-            <td><?php echo $room['name'] ?></td>
-        </tr>
-        </tbody>
-    </table>
-
-    <div class="py-5 col-lg-4 text-center">
-        <img src="<?php echo $room['photo']?>" alt="1" width="100%" height="100%">
+        <div class="py-5 col-4 col-sm-5">
+            <img src="<?php echo $room['photo']?>" alt="1" width="100%" height="100%">
+        </div>
     </div>
 
+    <hr>
 
-    <form action="room_info.php.php" method="POST" class="form p-5">
+    <form action="room_info.php" method="POST" class="form">
         <div class="form-group">
             <label for="room" class="form-label">Pokoj</label>
-            <input type="text" class="form-control" name="Pokoj" value="<?php echo $room['name'] ?>" tabindex="1" required>
+            <input type="text" class="form-control" name="room" value="<?php echo $room['name'] ?>" tabindex="1" required>
         </div>
         <div class="form-group">
-            <label for="name" class="form-label">Jméno a příjmení</label>
-            <input type="text" class="form-control" name="name" placeholder="Jméno příjmení" tabindex="2" required>
+            <label for="First_name" class="form-label">Jméno</label>
+            <input type="text" class="form-control" name="First_name" placeholder="Jméno" tabindex="2" required>
+        </div>
+        <div class="form-group">
+            <label for="Last_name" class="form-label">Příjmení</label>
+            <input type="text" class="form-control" name="Last_name" placeholder="Jméno příjmení" tabindex="3" required>
         </div>
         <div class="form-group">
             <label for="email" class="form-label">Email</label>
-            <input type="email" class="form-control" name="email" placeholder="email@email.cz" tabindex="3" required>
+            <input type="email" class="form-control" name="email" placeholder="email@email.cz" tabindex="4" required>
         </div>
         <div class="form-group">
             <label for="tel" class="form-label">Telefonní číslo</label>
-            <input type="tel" class="form-control" name="tel" value="+420" tabindex="4" required>
+            <input type="tel" class="form-control" name="tel" value="+420" tabindex="5" required>
         </div>
 
         <div>
