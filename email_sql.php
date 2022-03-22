@@ -43,7 +43,7 @@ if (isset($_POST['Fname'], $_POST['Lname'], $_POST['email_mess'], $_POST['mess']
 ?>
 
 <?php
-if (isset($_POST['room'], $_POST['First_name'], $_POST['Last_name'], $_POST['email'], $_POST['tel'],)) {
+if (isset($_POST['room'], $_POST['First_name'], $_POST['Last_name'], $_POST['email'], $_POST['tel'])) {
     $userRoom = $_POST['room'];
     $userFirstName = $_POST['First_name'];
     $userLastName = $_POST['Last_name'];
@@ -53,12 +53,12 @@ if (isset($_POST['room'], $_POST['First_name'], $_POST['Last_name'], $_POST['ema
     //MySQL-Connection
 
     $connection = mysqli_connect("localhost", "root", "", "user_contact");
-    $sqlBook = "INSERT INTO costumer_book (room,Fname, Lname, email, tel) VALUES ('$userFirstName','$userLastName','$userEmail','$userTel')";
+    $sqlBook = "INSERT INTO costumer_book (room,Fname, Lname, email, tel) VALUES ('$userRoom','$userFirstName','$userLastName','$userEmail','$userTel')";
 
     $result_Book = mysqli_query($connection, $sqlBook);
     ?>
     <div class="px-4 py-3 my-5 text-center">
-        <p class="display-5">Děkujeme za kontaktování</p>
+        <p class="display-5">Děkujeme za kontaktování11</p>
     </div>
     <?php
 }

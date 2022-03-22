@@ -16,16 +16,17 @@ $conn = new mysqli("localhost", "root", "", "user_contact");
 ?>
 <?php
 if (isset($_GET['id'])) {
-    $rooms = $conn->prepare('
-       SELECT * FROM rooms
-        WHERE id = ?');
-
     /*$rooms = $conn->prepare('
+       SELECT * FROM rooms
+        WHERE id = ?');*/
+
+    $rooms = $conn->prepare('
         SELECT * FROM rooms
         LEFT JOIN rooms_extra_info
-        ON rooms.id = rooms_extra_info.forkey_id
+        ON rooms.id = rooms_extra_info.id_forkey
         WHERE id = ?
-        ');*/
+        ');
+
     $rooms->bind_param("i", $_GET['id']);
     $rooms->execute();
 
@@ -54,32 +55,32 @@ $result = NULL;
     </div>
 <div class="container">
     <div class="row">
-        <div class="col-5 col-sm py-4">
+        <div class="col-5 col-sm py-5">
             <table class="table-responsive ">
                 <tbody>
                 <tr>
                     <th scope="row" class="text-end px-3">WC</th>
-                    <td><?php echo $room['name'] ?></td>
+                    <td><?php echo $room['wc'] ?></td>
                 </tr>
                 <tr>
                     <th scope="row" class="text-end px-3">Sprchový kout</th>
-                    <td><?php echo $room['name'] ?></td>
+                    <td><?php echo $room['sprcha'] ?></td>
                 </tr>
                 <tr>
                     <th scope="row" class="text-end px-3">Umyvadlo</th>
-                    <td><?php echo $room['name'] ?></td>
+                    <td><?php echo $room['umyvadlo'] ?></td>
                 </tr>
                 <tr>
                     <th scope="row" class="text-end px-3">TV</th>
-                    <td><?php echo $room['name'] ?></td>
+                    <td><?php echo $room['tv'] ?></td>
                 </tr>
                 <tr>
                     <th scope="row" class="text-end px-3">Postele</th>
-                    <td><?php echo $room['name'] ?></td>
+                    <td><?php echo $room['postel'] ?></td>
                 </tr>
                 <tr>
                     <th scope="row" class="text-end px-3">Skříň</th>
-                    <td><?php echo $room['name'] ?></td>
+                    <td><?php echo $room['skrin'] ?></td>
                 </tr>
                 </tbody>
             </table>
@@ -92,7 +93,7 @@ $result = NULL;
 
     <hr>
 
-    <form action="room_info.php" method="POST" class="form">
+    <form action="room_info.php?id=<?php echo $room['id']?>" method="POST" class="form">
         <div class="form-group">
             <label for="room" class="form-label">Pokoj</label>
             <input type="text" class="form-control" name="room" value="<?php echo $room['name'] ?>" tabindex="1" required>
