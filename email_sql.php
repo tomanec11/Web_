@@ -58,7 +58,7 @@ if (isset($_POST['room'], $_POST['First_name'], $_POST['Last_name'], $_POST['ema
     $result_Book = mysqli_query($connection, $sqlBook);
     ?>
     <div class="px-4 py-3 my-5 text-center">
-        <p class="display-5">Děkujeme za kontaktování11</p>
+        <p class="display-5">Děkujeme za vaši rezervaci</p>
     </div>
     <?php
 }

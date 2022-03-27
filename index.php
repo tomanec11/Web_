@@ -6,14 +6,7 @@
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.7.2/font/bootstrap-icons.css">
     <link rel="stylesheet" href="css/bootstrap.min.css">
     <link rel="stylesheet" href="style.css">
-    <script rel="stylesheet" src="js/bootstrap.min.js"></script>
-    <script rel="stylesheet" src="js/index.bundle.min.js"></script>
-    <script rel="stylesheet" src="api.js"></script>
-
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/lightgallery@2.4.0/css/lightgallery-bundle.min.css">
-    <style>
-
-    </style>
     <title>Ubytovani</title>
 </head>
 <body id="home">
@@ -154,11 +147,32 @@ include_once "header.php"
     </div>
 
 
-    <div class="others" id="current-weather-items">
+    <div class="container">
+        <h1 class="text-center py-5">Počasí</h1>
+        <hr class="mt-2 mb-5">
+            <div class="notification"> </div>
+            <div class="weather-container mx-auto">
+                <div class="weather-icon">
+                    <img src="icons/unknown.png" alt="">
+                </div>
+                <div class="temperature-value">
+                    <p>- °<span>C</span></p>
+                </div>
+                <div class="temperature-description">
+                    <p> - </p>
+                </div>
+                <div class="location">
+                    <p>-</p>
+                </div>
+            </div>
+    </div>
 
     </div>
 </div>
 
+<script rel="stylesheet" src="js/bootstrap.min.js"></script>
+<script rel="stylesheet" src="js/index.bundle.min.js"></script>
+<script src="api.js"></script>
 <script src="https://cdn.jsdelivr.net/npm/lightgallery@2.4.0/lightgallery.min.js"></script>
 
 <script>
