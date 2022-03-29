@@ -35,6 +35,7 @@ $result = mysqli_query($connection, $sql);
                             <div class="card shadow-sm">
                                 <img src="<?php echo $row['photo'] ?>" alt="1">
                                 <div class="card-body">
+                                    <p class="fw-bold"><?php echo $row['name']?></p>
                                     <p class="card-text"><?php echo $row['content']?></p>
                                     <div class="d-flex justify-content-between align-items-center">
                                         <a class="btn bg-warning" href="room_info.php?id=<?php echo $row['id'] ?>" role="button">Rezervovat</a>
