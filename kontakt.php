@@ -4,10 +4,11 @@
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.7.2/font/bootstrap-icons.css">
+    <link rel="shortcut icon" type="image/png" href="image/favicon.jpg">
     <link rel="stylesheet" href="css/bootstrap.min.css">
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
     <script rel="stylesheet" src="js/bootstrap.min.js"></script>
-    <title>Ubytovani</title>
+    <title>Vila Taťána</title>
 </head>
 <body>
 <?php

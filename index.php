@@ -5,9 +5,10 @@
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.7.2/font/bootstrap-icons.css">
     <link rel="stylesheet" href="css/bootstrap.min.css">
+    <link rel="shortcut icon" type="image/png" href="image/favicon.jpg">
     <link rel="stylesheet" href="style.css">
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/lightgallery@2.4.0/css/lightgallery-bundle.min.css">
-    <title>Ubytovani</title>
+    <title>Vila Taťána</title>
 </head>
 <body id="home">
 <?php
@@ -68,38 +69,29 @@ include_once "header.php"
     <hr class="mt-2 mb-5">
 
     <div class="d-flex flex-wrap justify-content-center" id="lightgallery">
-        <a href="image/pokoj2.jpg" class="d-block my-5 mx-4" style="height: 100px">
-            <img class="img-fluid" src="image/pokoj2.jpg" style="height: 150px">
+        <a href="image/photo1.jpg" class="d-block my-5 mx-4" style="height: 100px">
+            <img class="img-fluid" src="image/photo1.jpg" style="height: 150px">
         </a>
-
-        <a href="image/pokoj2.jpg" class="d-block my-5 mx-4"  style="height: 100px">
-            <img class="img-fluid" src="image/pokoj2.jpg" style="height: 150px">
+        <a href="image/photo2.jpg" class="d-block my-5 mx-4"  style="height: 100px">
+            <img class="img-fluid" src="image/photo2.jpg" style="height: 150px">
         </a>
-        <a href="image/pokoj2.jpg" class="d-block my-5 mx-4" style="height: 100px">
-            <img class="img-fluid" src="image/pokoj2.jpg" style="height: 150px">
+        <a href="image/photo3.jpg" class="d-block my-5 mx-4" style="height: 100px">
+            <img class="img-fluid" src="image/photo3.jpg" style="height: 150px">
         </a>
-        <a href="image/pokoj2.jpg" class="d-block my-5 mx-4" style="height: 100px">
-            <img class="img-fluid" src="image/pokoj2.jpg" style="height: 150px">
+        <a href="image/photo4.jpg" class="d-block my-5 mx-4" style="height: 100px">
+            <img class="img-fluid" src="image/photo4.jpg" style="height: 150px">
         </a>
-        <a href="image/pokoj2.jpg" class="d-block my-5 mx-4" style="height: 100px">
-            <img class="img-fluid" src="image/pokoj2.jpg" style="height: 150px">
+        <a href="image/photo5.jpg" class="d-block my-5 mx-4" style="height: 100px">
+            <img class="img-fluid" src="image/photo5.jpg" style="height: 150px">
         </a>
-        <a href="image/pokoj2.jpg" class="d-block my-5 mx-4" style="height: 100px">
-            <img class="img-fluid" src="image/pokoj2.jpg" style="height: 150px">
+        <a href="image/photo6.jpg" class="d-block my-5 mx-4" style="height: 100px">
+            <img class="img-fluid" src="image/photo6.jpg" style="height: 150px">
         </a>
-        <a href="image/pokoj2.jpg" class="d-block my-5 mx-4" style="height: 100px">
-            <img class="img-fluid" src="image/pokoj2.jpg" style="height: 150px">
+        <a href="image/photo7.jpg" class="d-block my-5 mx-4" style="height: 100px">
+            <img class="img-fluid" src="image/photo7.jpg" style="height: 150px">
         </a>
-        <a href="image/pokoj2.jpg" class="d-block my-5 mx-4" style="height: 100px">
-            <img class="img-fluid" src="image/pokoj2.jpg" style="height: 150px">
-        </a>
-
-        <a href="image/pokoj2.jpg" class="d-block my-5 mx-4" style="height: 100px">
-            <img class="img-fluid" src="image/pokoj2.jpg" style="height: 150px">
-        </a>
-
-        <a href="image/pokoj2.jpg" class="d-block my-5 mx-4" style="height: 100px">
-            <img class="img-fluid" src="image/pokoj2.jpg" style="height: 150px">
+        <a href="image/photo8.jpg" class="d-block my-5 mx-4" style="height: 100px">
+            <img class="img-fluid" src="image/photo8.jpg" style="height: 150px">
         </a>
     </div>
 

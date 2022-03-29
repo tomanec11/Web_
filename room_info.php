@@ -4,9 +4,10 @@
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.7.2/font/bootstrap-icons.css">
+    <link rel="shortcut icon" type="image/png" href="image/favicon.jpg">
     <link rel="stylesheet" href="css/bootstrap.min.css">
     <script rel="stylesheet" src="js/bootstrap.min.js"></script>
-    <title>Ubytovani</title>
+    <title>Vila Taťána</title>
 </head>
 <body>
 <?php
@@ -82,6 +83,10 @@ $result = NULL;
                     <th scope="row" class="text-end px-3">Skříň</th>
                     <td><?php echo $room['skrin'] ?></td>
                 </tr>
+                <tr>
+                    <th scope="row" class="text-end px-3">Cena</th>
+                    <td><?php echo $room['price'] ?> ,- / noc</td>
+                </tr>
                 </tbody>
             </table>
         </div>
@@ -104,7 +109,7 @@ $result = NULL;
         </div>
         <div class="form-group">
             <label for="Last_name" class="form-label">Příjmení</label>
-            <input type="text" class="form-control" name="Last_name" placeholder="Jméno příjmení" tabindex="3" required>
+            <input type="text" class="form-control" name="Last_name" placeholder="Příjmení" tabindex="3" required>
         </div>
         <div class="form-group">
             <label for="email" class="form-label">Email</label>
@@ -112,7 +117,7 @@ $result = NULL;
         </div>
         <div class="form-group">
             <label for="tel" class="form-label">Telefonní číslo</label>
-            <input type="tel" class="form-control" name="tel" value="+420" tabindex="5" required>
+            <input type="tel" maxlength = "9" class="form-control" name="tel" placeholder="+420"  tabindex="5" required>
         </div>
 
         <div>

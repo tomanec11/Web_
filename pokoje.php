@@ -4,9 +4,10 @@
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.7.2/font/bootstrap-icons.css">
+    <link rel="shortcut icon" type="image/png" href="image/favicon.jpg">
     <link rel="stylesheet" href="css/bootstrap.min.css">
     <script rel="stylesheet" src="js/bootstrap.min.js"></script>
-    <title>Ubytovani</title>
+    <title>Vila Taťána</title>
 </head>
 <body>
 <?php
@@ -37,7 +38,7 @@ $result = mysqli_query($connection, $sql);
                                     <p class="card-text"><?php echo $row['content']?></p>
                                     <div class="d-flex justify-content-between align-items-center">
                                         <a class="btn bg-warning" href="room_info.php?id=<?php echo $row['id'] ?>" role="button">Rezervovat</a>
-                                        <p><?php echo $row['price']?> / 1 Noc</p>
+                                        <p><?php echo $row['price']?> ,- / Noc</p>
                                     </div>
                                 </div>
                             </div>
