@@ -30,7 +30,7 @@ if (isset($_POST['Fname'], $_POST['Lname'], $_POST['email_mess'], $_POST['mess']
 
     //MySQL-Connection
 
-    $connection = mysqli_connect("localhost", "root", "", "user_contact");
+    $connection = mysqli_connect("sql.endora.cz:3310", "martinectomas", "Tajgr2002", "martinectomascz");
     $sqlMess = "INSERT INTO costumer_message (name, surname, email, mess) VALUES ('$userFName','$userLName','$userEmailMess','$userMess')";
 
     $result = mysqli_query($connection, $sqlMess);
@@ -52,7 +52,7 @@ if (isset($_POST['room'], $_POST['First_name'], $_POST['Last_name'], $_POST['ema
 
     //MySQL-Connection
 
-    $connection = mysqli_connect("localhost", "root", "", "user_contact");
+    $connection = mysqli_connect("sql.endora.cz:3310", "martinectomas", "Tajgr2002", "martinectomascz");
     $sqlBook = "INSERT INTO costumer_book (room, Fname, Lname, email, tel) VALUES ('$userRoom','$userFirstName','$userLastName','$userEmail','$userTel')";
 
     $result_Book = mysqli_query($connection, $sqlBook);

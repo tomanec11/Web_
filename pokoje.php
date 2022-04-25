@@ -13,7 +13,7 @@
 <?php
 include_once "header.php";
 // otevřu DB connect
-$connection = mysqli_connect("localhost", "root", "", "user_contact");
+$connection = mysqli_connect("sql.endora.cz:3310", "root", "", "martinectomascz");
 $sql = "SELECT * FROM rooms";
 
 $result = mysqli_query($connection, $sql);

@@ -13,7 +13,7 @@
 <?php
 include_once "header.php";
 // otevřu DB connect
-$conn = new mysqli("localhost", "root", "", "user_contact");
+$conn = new mysqli("sql.endora.cz:3310", "martinectomascz", "Tajgr2002", "martinectomascz");
 ?>
 <?php
 if (isset($_GET['id'])) {
